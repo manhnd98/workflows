@@ -1,0 +1,19 @@
+name: Generate a new component in your Nx workspace
+command: "npx nx g @nrwl/{{framework}}:component --name={{name}} --project={{projectName}} --export"
+tags:
+  - nx
+description: "This command generates a new component in your existing Nx workspace."
+arguments:
+  - name: framework
+    description: The presets you want to use when generating your component. Supported values -> angular, react, web, node, nest, next, detox, react-native, workspace, js.
+    default_value: ~
+  - name: name
+    description: The name you want to use for your library
+    default_value: ~
+  - name: projectName
+    description: The project name or library name of your component
+    default_value: ~
+source_url: "https://nx.dev/generators/using-schematics"
+author: mandarini
+author_url: "https://github.com/manhnd98"
+shells: []
